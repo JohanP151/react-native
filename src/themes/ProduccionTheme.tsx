@@ -6,10 +6,10 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'white',
     },
-    cabecera:{
-        width:400,
-        height:50,
-        backgroundColor:'#08628E',
+    cabecera: {
+        width: 400,
+        height: 50,
+        backgroundColor: '#08628E',
     },
     texto: {
         color: 'black',
@@ -54,37 +54,37 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 30,
         marginTop: 20,
     },
-    descripcion:{
+    descripcion: {
         color: 'black',
         fontSize: 20,
         paddingHorizontal: 30,
         marginTop: 20,
     },
-    nombreTabla:{
+    nombreTabla: {
         color: 'black',
         fontSize: 20,
         paddingHorizontal: 30,
         marginTop: 20,
     },
-    generarServer:{
+    generarServer: {
         color: 'black',
         fontSize: 20,
         paddingHorizontal: 30,
         marginTop: 20,
     },
-    tipoEntidad:{
+    tipoEntidad: {
         color: 'black',
         fontSize: 20,
         paddingHorizontal: 30,
         marginTop: 20,
     },
-    compania:{
+    compania: {
         color: 'black',
         fontSize: 20,
         paddingHorizontal: 30,
         marginTop: 20,
     },
-    nombreClase:{
+    nombreClase: {
         color: 'black',
         fontSize: 20,
         paddingHorizontal: 30,
@@ -107,8 +107,8 @@ export const styles = StyleSheet.create({
         borderRadius: 10,
         justifyContent: 'center',
         marginHorizontal: 5,
-        marginTop:10,
-        marginRight:15,
+        marginTop: 30,
+        marginRight: 15,
         //marginTop:20,
         //paddingHorizontal:10,
 
@@ -119,35 +119,48 @@ export const styles = StyleSheet.create({
         padding: 10,
         fontWeight: '600',
     },
-    generarBot:{
+    generarBot: {
         height: 50,
         width: 300,
         backgroundColor: '#0A8EBC',
         borderRadius: 10,
         justifyContent: 'center',
         marginHorizontal: 5,
-        marginTop:10,
-        marginLeft:30,
+        marginTop: 10,
+        marginLeft: 30,
     },
-    generarBotText:{
+    generarBotText: {
         textAlign: 'center',
         color: '#000000',
         padding: 10,
         fontWeight: '600',
     },
-    cuadroAtributos:{
-        width:340,
-        height:50,
-        backgroundColor:'#9B9B9B',
-        marginTop:10,
-        marginLeft:10,
+    cuadroAtributos: {
+        width: 340,
+        height: 50,
+        backgroundColor: '#9B9B9B',
+        marginTop: 10,
+        marginLeft: 10,
     },
-    textoAtributos:{
+    textoAtributos: {
         color: 'black',
         //fontSize: ,
         paddingHorizontal: 30,
         marginTop: 20,
-        textAlign:'center',
+        textAlign: 'center',
+    },
+    atributosCuadro: {
+        color: 'black',
+        fontSize: 18,
+        marginTop: 40,
+        marginLeft: 20,
+        marginRight: 20,
+        fontWeight: '600',
+        paddingLeft: 20,
+        borderWidth: 1,
+        borderRadius: 7,
+        borderColor: '#085A86',
+        paddingRight: 12,
     },
 });
 
