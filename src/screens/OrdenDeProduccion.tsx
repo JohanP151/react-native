@@ -42,9 +42,11 @@ export const OrdenDeProduccion = () => {
           <View>
             <TextInput style={styles.infoDocumento}>Cantidad</TextInput>
           </View>
-          <View style={styles.fila}>
-            <BotonesFinal texto="Guardar" color="#0A8EBC" />
-            <BotonesFinal texto="Cancelar" color="#000000" />
+          <View>
+            <View style={styles.fila}>
+              <BotonesFinal texto="Guardar" color="#0A8EBC" />
+              <BotonesFinal texto="Cancelar" color="#000000" />
+            </View>
           </View>
         </ScrollView>
       </SafeAreaView>
