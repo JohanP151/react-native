@@ -15,7 +15,7 @@ export const OrdenDeProduccion = () => {
         <ScrollView>
           <View style={styles.cabecera} />
           <Text style={styles.texto}>Orden de Producción</Text>
-          <Text style={styles.linea}>__________________________________________</Text>
+          <Text style={styles.linea}>________________________________________</Text>
           <Text style={styles.nombre}>Número del Documento</Text>
           <TextInput style={styles.infoDocumento}>Production</TextInput>
           {/*fecha*/}
