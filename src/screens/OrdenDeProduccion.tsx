@@ -6,8 +6,8 @@ import DatePicker from 'react-native-date-picker';
 
 
 export const OrdenDeProduccion = () => {
-  const [date, setDate] = useState(new Date())
-  const [open, setOpen] = useState(false)
+  const [date, setDate] = useState(new Date());
+  const [open, setOpen] = useState(false);
 
   return (
     <View>
@@ -19,17 +19,18 @@ export const OrdenDeProduccion = () => {
           <Text style={styles.nombre}>Número del Documento</Text>
           <TextInput style={styles.infoDocumento}>Production</TextInput>
           <Text style={styles.nombre}>Fecha</Text>
-          <Button title='Open' onPress={() => setOpen(true)}/>
-          <DatePicker 
+          <Button title="Open" onPress={() => setOpen(true)}/>
+          <DatePicker
             modal
             open={open}
             date={date}
+            // eslint-disable-next-line @typescript-eslint/no-shadow
             onConfirm={(date) =>{
-              setOpen(false)
-              setDate(date)
+              setOpen(false);
+              setDate(date);
             }}
             onCancel={() => {
-              setOpen(false)
+              setOpen(false);
             }}
           />
           <Text style={styles.descripcion}>Producto</Text>
