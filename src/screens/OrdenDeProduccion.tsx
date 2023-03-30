@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
+import React, {   useState } from 'react';
 import { Button, SafeAreaView, ScrollView, Text, TextInput, View } from 'react-native';
 import { styles } from '../themes/ProduccionTheme';
 import { BotonesFinal } from '../components/BotonesFinal';
 import DatePicker from 'react-native-date-picker';
+import Tabla from './Tabla';
+
+
+
 
 
 export const OrdenDeProduccion = () => {
+  //fecha
   const [date, setDate] = useState(new Date());
   const [open, setOpen] = useState(false);
+
+//select
+
 
   return (
     <View>
@@ -18,6 +26,7 @@ export const OrdenDeProduccion = () => {
           <Text style={styles.linea}>__________________________________________</Text>
           <Text style={styles.nombre}>Número del Documento</Text>
           <TextInput style={styles.infoDocumento}>Production</TextInput>
+          {/*fecha*/}
           <Text style={styles.nombre}>Fecha</Text>
           <Button title="Open" onPress={() => setOpen(true)}/>
           <DatePicker
@@ -33,8 +42,9 @@ export const OrdenDeProduccion = () => {
               setOpen(false);
             }}
           />
+          {/*select */}
           <Text style={styles.descripcion}>Producto</Text>
-          <TextInput style={styles.infoDocumento}>Production</TextInput>
+            <Tabla />
           <Text style={styles.atributos}>Atributos</Text>
           <View style={styles.cuadroAtributos} >
             <Text style={styles.textoAtributos}>Producto                                                    Cantidad</Text>
@@ -48,3 +58,6 @@ export const OrdenDeProduccion = () => {
     </View>
   );
 };
+
+
+
